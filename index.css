@@ -1,0 +1,105 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form .amount, .dropdown .from, .dropdown .to {
+    margin-bottom: 1rem;
+}
+
+form .amount p, .dropdown p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Input Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Select Container Styling */
+.slect-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.slect-container img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.slect-container select {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+/* Button Styling */
+button.btn {
+    padding: 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Message Styling */
+.msg {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container{
+        margin-top: 4rem;
+    }
+    form {
+        padding: 2rem;
+    }
+}
